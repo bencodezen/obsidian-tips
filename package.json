@@ -1,28 +1,18 @@
 {
-  "name": "obsidian-tips",
-  "version": "1.0.0",
-  "private": true,
+  "name": "iles-app",
+  "version": "0.0.0",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint": "yarn lint:js"
+    "dev": "iles dev --open",
+    "build": "iles build",
+    "preview": "iles preview --open --port 5050",
+    "typecheck": "vue-tsc --noEmit"
   },
-  "dependencies": {
-    "@nuxt/content": "^1.14.0",
-    "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
+  "engines": {
+    "node": "^14.18 || >= 16.0.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.14.7",
-    "@nuxtjs/eslint-config": "^6.0.1",
-    "@nuxtjs/eslint-module": "^3.0.2",
-    "eslint": "^7.29.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-vue": "^7.12.1",
-    "prettier": "^2.3.2"
+    "iles": "^0.7.19",
+    "typescript": "^4.5",
+    "vue-tsc": "^0.29"
   }
 }
