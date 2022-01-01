@@ -1,14 +1,15 @@
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img
+      alt="Vue logo"
+      class="logo"
+      src="@/assets/logo.svg"
+      width="125"
+      height="125"
+    />
 
     <div class="wrapper">
       <HelloWorld :msg="$frontmatter.title" />
-
-      <div id="nav">
-        <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
-      </div>
     </div>
   </header>
 
@@ -37,9 +38,9 @@ header {
 }
 
 a,
-.green {
+.purple {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: #7f6df2;
   transition: 0.4s;
 }
 

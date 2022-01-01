@@ -6,13 +6,11 @@ defineProps<{
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      You’ve successfully created a project with
-      <a target="_blank" href="https://iles-docs.netlify.app/">îles</a> +
-      <a target="_blank" href="https://vitejs.dev/">Vite</a> + <FrameworkLink client:none />. What's
-      next?
-    </h3>
+    <h1 class="purple">{{ msg }}</h1>
+    <p class="subtitle">
+      A site dedicated to provided tips and tricks for getting the most out of
+      <a href="https://obsidian.md/">Obsidian</a>.
+    </p>
   </div>
 </template>
 
@@ -23,7 +21,7 @@ h1 {
   top: -10px;
 }
 
-h3 {
+.subtitle {
   font-size: 1.2rem;
 }
 
